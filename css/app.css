@@ -1,0 +1,255 @@
+body {
+  font-family: 'Futura W01';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+  background-color: #fafafa;
+}
+
+/* Image styling */
+img {
+  object-fit: contain;
+}
+
+.logo {
+  width: 119px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.card-img {
+  width: 410px;
+  height: 255px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.waitlist {
+  width: 146px;
+  height: 80px;
+}
+
+img.faq {
+  width: 81px;
+  height: 80px;
+}
+
+.img-tag {
+  margin-bottom: 1rem;
+}
+
+/* Section styling */
+hr {
+  opacity: 0.5;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.section.end {
+  background-color: #000000;
+  padding-bottom: 2rem;
+}
+
+.section-background {
+	width: 100%;
+  -ms-transform: skewY(-5deg); /* IE 9 */
+  -webkit-transform: skewY(-5deg); /* Safari */
+  transform: skewY(-5deg);
+  transform-origin: top left;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  z-index: -1;
+}
+
+.section-background.intro {
+	height: 100%;
+  background-image: linear-gradient(120deg, #ff009d, #f5b324);
+}
+
+.section-background.faq {
+	height: 100%;
+  transform-origin: top left;
+  background-color: #000000;
+  bottom: 0;
+}
+
+/* Text styling */
+.welcome-text {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: normal;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.faq-heading {
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.faq-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.small-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f0b323;
+  margin-bottom: 0.5rem;
+}
+
+.large-heading {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Menu styling */
+ul#menu {
+  margin: 0;
+}
+
+ul#menu li {
+  padding: 0 1rem;
+  list-style: none;
+}
+
+.link {
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* Form styling */
+label {
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #141310;
+}
+
+.form-label {
+  color: #a8a8a8;
+}
+
+.join.button {
+  background-color: #f0b323;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #141310;
+  border-radius: 2.5px;
+}
+
+.button.join:hover, .button.join:focus {
+  background-color: #d8a11f;
+  color: #141310;
+}
+
+.form-container {
+  border: none;
+  border-radius: 2.5px;
+  box-shadow: 0 1px 5px 0 rgba(24, 17, 3, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(24, 17, 3, 0.14);
+}
+
+form > .button-container {
+  text-align: center;
+}
+
+.form-input {
+  border-radius: 2.5px;
+}
+
+/* medium and larger screen styling */
+@media only screen and (min-width: 40em) {
+  ul#menu {
+    float: right;
+  }
+  
+  ul#menu li {
+    display: inline;
+    padding: 0 0.5rem;
+  }
+  
+  .img-tag {
+    float: right;
+  }
+  
+  .logo {
+    margin-bottom: 0;
+  }
+  
+  .section {
+    padding-top: 1rem;
+    padding-bottom: 5.5rem;
+  }
+  
+  .section.end {
+    padding-bottom: 4rem;
+  }
+  
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .large-heading {
+    margin-bottom: 2rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem;
+  }
+  
+  label {
+    padding-top: 0.5rem;
+  }
+}
+
+/* large screen styling */
+@media only screen and (min-width: 64em) {  
+  .section {
+    padding-top: 1rem;
+    padding-bottom: 9rem;
+  }
+  
+  hr {
+    margin-top: 1.5rem;
+  }
+}
